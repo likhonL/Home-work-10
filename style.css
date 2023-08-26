@@ -1,0 +1,196 @@
+:root{
+    --purple500:#281154;
+    --purple300:#270082;
+    --purple600:#1b0058;
+    --red600:#dc0000;
+    --body:#f9f6ff;
+    --max-width:1200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    font-family: "Roboto",sans-serif;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: var(--purple500);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding:20px 0 ;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+}
+nav ul li{
+    border-bottom:2px solid transparent ;
+    transition: 0.2s ease-in;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+.btn{
+    background-color: var(--red600);
+    color: white;
+}
+.vibe{
+    background-image: url(image/music\ pic.jpg);
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.vibe .container{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.vibe h1{
+    font-size: 100px;
+}
+.vibe h3{
+    font-size: 36px;
+}
+.music{
+    padding-top: 55px;
+    background: var(--purple500);
+}
+.music .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.ipad-iphone-img{
+    position: relative;
+
+}
+.second-btn {
+    background-color: var(--purple300);
+    color: white;
+}
+.about-music{
+    padding-top: 50px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom:50px ;
+}
+.video{
+    background-image: url(image/bite.jpg);
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.video .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+.video .container h3{
+    font-size: 30px;
+}
+.gift{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+}
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+.gift-content h3::before{
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    background: #000;
+    content: "";
+    top: 12px;
+    right: 812px;
+    transform: translateX(-50%);
+}
+.random-btn{
+    background-color: var(--purple300);
+    color: white;
+}
+.footer-upper{
+    background-color: var(--purple600);
+    padding: 20px;
+}
+.footer-upper .container{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.footer-upper h4{
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+.footer-lower{
+    background-color: var(--purple300);
+    padding:20px ;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
